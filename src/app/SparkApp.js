@@ -691,14 +691,14 @@ function MintNFTDialog({ clip, walletClient, walletAddress, initializeWalletClie
         </Tabs>
         {transactionUrl && (
           <div className="mt-4">
-            <p className="text-sm text-gray-500">Transaction successful! View details:</p>
+            <p className="text-sm text-gray-500">Transaction successful! </p>
             <a
               href={transactionUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline"
             >
-              {transactionUrl}
+              {" "}View minted NFT
             </a>
           </div>
         )}
