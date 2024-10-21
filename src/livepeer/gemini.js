@@ -1,7 +1,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 
-const apiKey ="AIzaSyD4Es5f8B8bK1l1Qa3yzqMYMd4JsmiRNhE"
+const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY
 
 async function generateTextFromGemini(prompt) {
   // Initialize the API client

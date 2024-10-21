@@ -4,7 +4,7 @@ const { fileURLToPath } = require('url');
 const path = require('path');
 
 const livepeerAI = new Livepeer({
-  httpBearer: "ab318ae2-e164-4b45-ae34-8530d57151c2",
+  httpBearer: process.env.NEXT_PUBLIC_LIVEPEER,
 });
 
 async function getTranscript(videoBlob) {
