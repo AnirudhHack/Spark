@@ -1,4 +1,5 @@
 # Spark: AI-Powered Video Clip Generator and NFT Minter
+![image](https://github.com/user-attachments/assets/f223b173-02b3-4123-ba39-84f6d349f08d)
 
 ## Introduction
 
@@ -10,6 +11,19 @@ Spark is a cutting-edge web application that revolutionizes the way content crea
 
 This innovative approach not only saves time for content creators but also opens up new monetization opportunities by transforming existing content into valuable digital assets. Spark is the perfect tool for creators looking to maximize the impact and value of their video content in the Web3 era.
 
+### Integrations
+- **Livepeer**: Used for video transcription and processing
+- **Story Protocol**: For minting AI generated video clips as NFTs with customizable licensing terms
+- **Zora**: For minting AI generated video clips as NFTs on zora
+- **Google's Gemini AI**: Analyzes transcripts to identify the most engaging clip segments
+
+
+## Video Demo
+https://drive.google.com/file/d/1C7DpDXTlO5f6SWSdp7zavoAYJdGkjCQP/view?usp=drive_link
+
+## Dapp deployed link
+https://spark-ai-app.vercel.app/
+
 ## Technical Architecture
 
 Spark is built on a modern tech stack that combines frontend technologies with AI services and blockchain integration. Here's an overview of the key components:
@@ -18,15 +32,6 @@ Spark is built on a modern tech stack that combines frontend technologies with A
 - **React**: The core framework for building the user interface
 - **Next.js**: For server-side rendering and optimized performance
 - **Tailwind CSS**: For responsive and customizable styling
-
-### AI and Video Processing
-- **Livepeer**: Used for video transcription and processing
-- **Google's Gemini AI**: Analyzes transcripts to identify the most engaging clip segments
-
-### Blockchain Integration
-- **Story Protocol**: For minting NFTs with customizable licensing terms
-- **Zora**: An alternative platform for minting and showcasing NFTs
-- **Viem**: A lightweight Ethereum library for interacting with wallets and smart contracts
 
 ### Key Components
 
@@ -61,13 +66,19 @@ Spark is built on a modern tech stack that combines frontend technologies with A
 
 ## Getting Started
 
-(Include instructions for setting up the project, installing dependencies, and running the application locally)
+## Running locally in development mode
+    
+    npm install
+    npm run dev
 
-## Future Enhancements
 
-- Integration with more blockchain platforms
-- Advanced AI-driven clip selection algorithms
-- Social sharing features for minted NFTs
-- Analytics dashboard for tracking NFT performance
+## Building and deploying in production
+
+
+    npm install
+    npm run build
+    npm start
+
+
 
 Spark represents the future of content creation and monetization, bridging the gap between traditional video content and the exciting world of Web3 and NFTs.
