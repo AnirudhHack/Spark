@@ -17,7 +17,7 @@ Guidelines for selecting clips:
    - Surprising or controversial statements
    - Clear explanations of complex topics
 3. Ensure each clip is coherent and can stand alone without additional context.
-4. Ideal clip length is 30-60 seconds, but can be shorter if the content warrants it.
+4. Ideal clip length is 30-60 seconds.
 5. Avoid overlapping clips unless absolutely necessary for context.
 
 Transcript structure:
