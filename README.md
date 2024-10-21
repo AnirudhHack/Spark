@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spark: AI-Powered Video Clip Generator and NFT Minter
+
+## Introduction
+
+Spark is a cutting-edge web application that revolutionizes the way content creators interact with long-form video content. By leveraging the power of AI and blockchain technology, Spark allows users to:
+
+1. Upload long-form videos
+2. Automatically generate short, engaging clips using AI-powered content analysis
+3. Mint these clips as NFTs on either the Story Protocol or Zora platforms
+
+This innovative approach not only saves time for content creators but also opens up new monetization opportunities by transforming existing content into valuable digital assets. Spark is the perfect tool for creators looking to maximize the impact and value of their video content in the Web3 era.
+
+## Technical Architecture
+
+Spark is built on a modern tech stack that combines frontend technologies with AI services and blockchain integration. Here's an overview of the key components:
+
+### Frontend
+- **React**: The core framework for building the user interface
+- **Next.js**: For server-side rendering and optimized performance
+- **Tailwind CSS**: For responsive and customizable styling
+
+### AI and Video Processing
+- **Livepeer**: Used for video transcription and processing
+- **Google's Gemini AI**: Analyzes transcripts to identify the most engaging clip segments
+
+### Blockchain Integration
+- **Story Protocol**: For minting NFTs with customizable licensing terms
+- **Zora**: An alternative platform for minting and showcasing NFTs
+- **Viem**: A lightweight Ethereum library for interacting with wallets and smart contracts
+
+### Key Components
+
+1. **SparkApp (src/app/SparkApp.js)**
+   - Main application component
+   - Handles wallet connection, video upload, and clip generation
+
+2. **MintNFTDialog (src/app/SparkApp.js)**
+   - Dialog for minting NFTs
+   - Supports both Story Protocol and Zora platforms
+
+3. **Clip Generation (src/livepeer/clipGenerator.js)**
+   - Utilizes Livepeer for video transcription
+   - Employs Gemini AI to analyze transcripts and identify optimal clip segments
+
+4. **Blockchain Integration**
+   - Story Protocol minting (src/storyProtocol/mintAndRegisterOnStory.js)
+   - Zora minting (src/zora/zora.js)
+
+5. **IPFS Integration**
+   - For storing video clips and metadata
+
+### Workflow
+
+1. User uploads a video file
+2. The video is transcribed using Livepeer
+3. Gemini AI analyzes the transcript to identify engaging clips
+4. User selects a clip to mint as an NFT
+5. User chooses between Story Protocol or Zora for minting
+6. The clip is uploaded to IPFS
+7. NFT is minted on the chosen platform with the IPFS link and metadata
 
 ## Getting Started
 
-First, run the development server:
+(Include instructions for setting up the project, installing dependencies, and running the application locally)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Future Enhancements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Integration with more blockchain platforms
+- Advanced AI-driven clip selection algorithms
+- Social sharing features for minted NFTs
+- Analytics dashboard for tracking NFT performance
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Spark represents the future of content creation and monetization, bridging the gap between traditional video content and the exciting world of Web3 and NFTs.

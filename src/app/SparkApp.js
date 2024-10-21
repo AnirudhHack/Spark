@@ -174,7 +174,7 @@ export default function SparkApp() {
         <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-extrabold text-gray-900 text-center h-16">
             <ReactTypingEffect
-              text={["Turn Long Videos into Short Clips in Minutes"]}
+              text={["Turn Long Videos into Short Clips in seconds"]}
               speed={30}
               eraseDelay={700000}
               typingDelay={0}
